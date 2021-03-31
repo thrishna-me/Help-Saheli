@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        tools:context=".VolunteerInfo">
+
+        <TextView
+            android:id="@+id/volunteer_napkin_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/no_of_napkins_you_have"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/volunteer_napkin_count"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_napkin_count_text" />
+
+        <TextView
+            android:id="@+id/volunteer_napkin_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/size_of_napkins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_napkin_count" />
+
+        <Spinner
+            android:id="@+id/volunteer_napkin_size"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_napkin_size_text" />
+
+        <EditText
+            android:id="@+id/volunteer_brand_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/brand_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_napkin_size" />
+
+        <EditText
+            android:id="@+id/volunteer_location_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/your_location"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_brand_name" />
+
+        <EditText
+            android:id="@+id/volunteer_pincode_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/your_pincode"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorLink="@color/purple_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_location_text" />
+
+        <Button
+            android:id="@+id/volunteer_info_submit_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/request_napkin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_pincode_number" />
+
+        <TextView
+            android:id="@+id/location_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/note"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/volunteer_info_submit_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

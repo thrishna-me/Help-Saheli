@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <Button
+        android:id="@+id/profile_settings"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Profile Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/volunteer_switch_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volunteer"
+        app:layout_constraintTop_toBottomOf="@id/profile_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/active_switch_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active"
+        app:layout_constraintTop_toBottomOf="@id/volunteer_switch_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/lateNight_switch_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Late Night Stay"
+        app:layout_constraintTop_toBottomOf="@id/active_switch_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/emergency_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/lateNight_switch_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/sos_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOS Call"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/emergency_contacts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="5dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Saheli</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="username">Name</string>
+    <string name="login">Login</string>
+    <string name="sign_up_here">Sign Up here</string>
+    <string name="login_here">Login Here</string>
+    <string name="gender">Gender</string>
+    <string name="want_to_volunteer">Want to Volunteer?</string>
+    <string name="required_text">You can change volunteer option in the settings whenever you want</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="other">Other</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="volunteer_option_is_on">Volunteer option is on</string>
+    <string name="how_to_use_the_app">How to use the app?</string>
+    <string name="request_napkin">Request Napkin</string>
+    <string name="imageView">Women help each, lift each other</string>
+    <string name="note">Note: Make sure your GPS is on</string>
+    <string name="your_pincode">Your Pincode</string>
+    <string name="your_location">Your Location</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="size_of_napkins">Size of napkins</string>
+    <string name="no_of_napkins">No. of napkins</string>
+    <string name="no_of_napkins_you_have">No. of /napkins you have</string>
+    <string name="add_napkin">Add Napkin(s)</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="count_of_napkins">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="size_of_napkin">
+        <item>Regular</item>
+        <item>Large (L)</item>
+        <item>Extra Large (XL)</item>
+        <item>Extra Extra Large (XXL)</item>
+    </string-array>
+
+</resources>
